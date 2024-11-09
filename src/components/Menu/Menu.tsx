@@ -9,7 +9,7 @@ const Menu = () => {
     <nav className="menu">
       <ul className="menu__list">
         <li className="menu__item">
-          <NavLink className={linkClass} to="/RA_router-menu" end>Главная</NavLink>
+          <NavLink className={linkClass} to="/RA_router-menu/" end>Главная</NavLink>
         </li>
         <li className="menu__item">
           <NavLink className={linkClass} to="/RA_router-menu/drift">Дрифт-такси</NavLink>
