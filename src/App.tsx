@@ -1,5 +1,4 @@
 import {
-  // createBrowserRouter,
   createHashRouter,
   createRoutesFromElements,
   Route,
@@ -15,15 +14,10 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import TimeAttackPage from './pages/TimeAttackPage/TimeAttackPage';
 
 const App = () => {
-  // const routes = createBrowserRouter(
+  // вместо createBrowserRouter берём createHashRouter, чтобы работала перезагрузка на GitHub Pages:
   const routes = createHashRouter(
     createRoutesFromElements(
-      <Route
-        // path="/RA_router-menu"
-        path="/"
-        element={<Layout />}
-        errorElement={<ErrorPage />}
-      >
+      <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
         <Route index element={<HomePage />} />
         <Route path="drift" element={<DriftPage />} />
         <Route path="timeattack" element={<TimeAttackPage />} />

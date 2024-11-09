@@ -8,7 +8,6 @@ const ErrorPage = () => {
       <p className="error-page__text">Sorry, an unexpected error has occurred.</p>
       <p className="error-page__text">Please try again later.</p>
       <Link className="error-page__btn" to="/">Home</Link>
-      {/* <Link className="error-page__btn" to="/RA_router-menu">Home</Link> */}
     </div>
   );
 };
