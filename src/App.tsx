@@ -1,5 +1,6 @@
 import {
-  createBrowserRouter,
+  // createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -14,9 +15,14 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import TimeAttackPage from './pages/TimeAttackPage/TimeAttackPage';
 
 const App = () => {
-  const routes = createBrowserRouter(
+  // const routes = createBrowserRouter(
+  const routes = createHashRouter(
     createRoutesFromElements(
-      <Route path="/RA_router-menu" element={<Layout />} errorElement={<ErrorPage />}>
+      <Route
+        path="/RA_router-menu"
+        element={<Layout />}
+        errorElement={<ErrorPage />}
+      >
         <Route index element={<HomePage />} />
         <Route path="drift" element={<DriftPage />} />
         <Route path="timeattack" element={<TimeAttackPage />} />
