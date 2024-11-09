@@ -9,16 +9,20 @@ const Menu = () => {
     <nav className="menu">
       <ul className="menu__list">
         <li className="menu__item">
-          <NavLink className={linkClass} to="/RA_router-menu/" end>Главная</NavLink>
+          <NavLink className={linkClass} to="/" end>Главная</NavLink>
+          {/* <NavLink className={linkClass} to="/RA_router-menu/" end>Главная</NavLink> */}
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/RA_router-menu/drift">Дрифт-такси</NavLink>
+          <NavLink className={linkClass} to="/drift">Дрифт-такси</NavLink>
+          {/* <NavLink className={linkClass} to="/RA_router-menu/drift">Дрифт-такси</NavLink> */}
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/RA_router-menu/timeattack">Time Attack</NavLink>
+          <NavLink className={linkClass} to="/timeattack">Time Attack</NavLink>
+          {/* <NavLink className={linkClass} to="/RA_router-menu/timeattack">Time Attack</NavLink> */}
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/RA_router-menu/forza">Forza Karting</NavLink>
+          <NavLink className={linkClass} to="/forza">Forza Karting</NavLink>
+          {/* <NavLink className={linkClass} to="/RA_router-menu/forza">Forza Karting</NavLink> */}
         </li>
       </ul>
     </nav>

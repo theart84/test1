@@ -19,7 +19,8 @@ const App = () => {
   const routes = createHashRouter(
     createRoutesFromElements(
       <Route
-        path="/RA_router-menu"
+        // path="/RA_router-menu"
+        path="/"
         element={<Layout />}
         errorElement={<ErrorPage />}
       >
