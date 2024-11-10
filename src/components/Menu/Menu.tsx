@@ -12,13 +12,13 @@ const Menu = () => {
           <NavLink className={linkClass} to="/" end>Главная</NavLink>
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/drift">Дрифт-такси</NavLink>
+          <NavLink className={linkClass} to="drift">Дрифт-такси</NavLink>
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/timeattack">Time Attack</NavLink>
+          <NavLink className={linkClass} to="timeattack">Time Attack</NavLink>
         </li>
         <li className="menu__item">
-          <NavLink className={linkClass} to="/forza">Forza Karting</NavLink>
+          <NavLink className={linkClass} to="forza">Forza Karting</NavLink>
         </li>
       </ul>
     </nav>
