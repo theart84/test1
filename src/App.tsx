@@ -26,7 +26,7 @@ const App = () => {
     ),
     {
       // добавляем 'basename', чтобы работала перезагрузка на GitHub Pages без createHashRouter():
-      basename: '/RA_router-menu',
+      basename: '/RA_router-menu/',
       // избавляет от множества warn в консоли:
       future: {
         v7_relativeSplatPath: true,
