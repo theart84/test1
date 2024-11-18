@@ -1,5 +1,5 @@
 import {
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -14,8 +14,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import TimeAttackPage from './pages/TimeAttackPage/TimeAttackPage';
 
 const App = () => {
-  // вместо createBrowserRouter берём createHashRouter, чтобы работала перезагрузка на GitHub Pages:
-  const routes = createHashRouter(
+  const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
         <Route index element={<HomePage />} />
@@ -26,6 +25,8 @@ const App = () => {
       </Route>
     ),
     {
+      // добавляем 'basename', чтобы работала перезагрузка на GitHub Pages без createHashRouter():
+      basename: '/RA_router-menu',
       // избавляет от множества warn в консоли:
       future: {
         v7_relativeSplatPath: true,
@@ -40,10 +41,7 @@ const App = () => {
   return (
     <RouterProvider
       router={routes}
-      // избавляет от warn в консоли:
-      future={{
-        v7_startTransition: true,
-      }}
+      future={{ v7_startTransition: true }} // избавляет от warn в консоли
     />
   );
 };
