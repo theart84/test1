@@ -4,7 +4,7 @@
   "type": "module",
   "author": "professor-severus-snape",
   "license": "MIT",
-  "homepage": "https://professor-severus-snape.github.io/RA_router-menu",
+  "homepage": "https://theart84.github.io/test1",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
